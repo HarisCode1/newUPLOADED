@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "vss payroll", "..\vss payroll", "{175FD880-6BB9-40E3-9DE8-50354A3D051B}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""$/VSS_Payroll", HLQGAAAA"
+		SccAuxPath = ""
+		SccLocalPath = "."
+		SccProvider = "MSSCCI:Microsoft Visual SourceSafe"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/vss payroll"
+		Debug.AspNetCompiler.PhysicalPath = "F:\furqan\working projects\vss payroll\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\vss payroll\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/vss payroll"
+		Release.AspNetCompiler.PhysicalPath = "F:\furqan\working projects\vss payroll\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\vss payroll\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51294"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 1
+		SccWebProject0 = true
+		SccProjectUniqueName0 = .
+		SccProjectName0 = \u0022$/VSS_Payroll\u0022,\u0020HLQGAAAA
+		SccLocalPath0 = F:\\furqan\\working\u0020projects\\vss\u0020payroll
+		SccProvider0 = MSSCCI:Microsoft\u0020Visual\u0020SourceSafe
+		SccProjectEnlistmentChoice0 = 2
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{175FD880-6BB9-40E3-9DE8-50354A3D051B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175FD880-6BB9-40E3-9DE8-50354A3D051B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

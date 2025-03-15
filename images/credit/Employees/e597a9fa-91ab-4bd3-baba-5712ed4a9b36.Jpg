@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+
+</title></head>
+<body>
+    <form method="post" action="imae save.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTE3NTY2MzE2M2Rkq8GKz1LdiT2WfpOolBN2tW3R64JoMSaUGNrIiMP3T7k=" />
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAdQoA81ejjVthkZySlzjOrsPskWcW1f7rvKD4OPmQaiMNN3UOqEIo5fy2vT4qlGzzeRjXmrPvMkZps1dA9hnARKSF60hnugu1bWc3A+ko1tBPdBm5O1hPmqKBEZ35AHIMDN+DvxnwFeFeJ9MIBWR6938RP9FoxRXu5Uk2FFd52MqvooKFRHeZdUIrKAq9xsKPo=" />
+</div>
+        <span id="Label1">File Name</span>
+    <div>
+        <input name="txtfilename" type="text" value="ej6djk" id="txtfilename" />
+        <select name="ddl" id="ddl">
+	<option selected="selected" value=".Jpg">.Jpg</option>
+	<option value=".png">.png</option>
+	<option value=".docx">.docx</option>
+	<option value=".plp">.plp</option>
+
+</select>
+    
+        <input type="submit" name="Button1" value="Button" id="Button1" />
+    </div>
+        
+
+<script type="text/javascript">
+//<![CDATA[
+alert(' Page Load');alert(' Your Image Save');//]]>
+</script>
+</form>
+</body>
+</html>

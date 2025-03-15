@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity.Infrastructure;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class checkisupdatetest : System.Web.UI.Page
+{
+    vt_EMSEntities db = new vt_EMSEntities();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        vt_tbl_Employee emp = db.vt_tbl_Employee.FirstOrDefault();
+        emp.Email = "t15@g.com";
+        db.Entry(emp);
+
+        DbEntityEntry[] lst = db.ChangeTracker.Entries().Where(x => x.State == System.Data.Entity.EntityState.Modified).ToArray();
+        
+        //foreach (var entry in db.ChangeTracker.Entries())
+        //{
+        //    if (entry.State == System.Data.Entity.EntityState.Modified)
+        //    {
+        //        // use entry.OriginalValues
+        //        vt_tbl_Employee originalFoo = new vt_tbl_Employee();// CreateWithValues<Foo>(entry.OriginalValues);
+        //    }
+        //}
+        db.SaveChanges();
+    }
+
+
+    bool isEntityChange( dbentity)
+    {        
+        db.ChangeTracker.Entries<dbentity.GetType()>().Where(x => x.State == System.Data.Entity.EntityState.Modified).ToArray();
+    }
+}

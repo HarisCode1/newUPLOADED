@@ -1,0 +1,185 @@
+﻿using System;
+using System.Data;
+using System.Linq;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Viftech;
+
+public partial class CoreManagement_Add : System.Web.UI.Page
+{
+    private vt_EMSEntities db = new vt_EMSEntities();
+    public int CompanyID = 0;
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (Authenticate.Confirm())
+        {
+            CompanyID = (int)Session["CompanyId"];
+            if (!Page.IsPostBack)
+            {
+                Fill_Gv();
+                Fill_LstDesignation();
+            }
+        }
+    }
+
+    private void Fill_LstDesignation()
+    {
+        var Data = db.vt_tbl_Designation.Where(x => x.CompanyID == CompanyID && x.TopDesignationID == 0).ToList();
+        if (Data != null)
+        {
+            LstTopDesignation.DataValueField = "DesignationID";
+            LstTopDesignation.DataTextField = "Designation";
+            LstTopDesignation.DataSource = Data;
+        }
+        else
+        {
+            LstTopDesignation.DataSource = null;
+        }
+        LstTopDesignation.DataBind();
+    }
+
+    protected void BtnSave_Click(object sender, EventArgs e)
+    {
+        if (BtnSave.Text == "Update")
+        {
+            string Title = TxtTitle.Text;
+            Save(Title);
+        }
+        else
+        {
+            Save();
+        }
+    }
+
+    private bool Save()
+    {
+        if (LstTopDesignation.Text != "")
+        {
+            var Data = ProcedureCall.sp_IsPresent("vt_tbl_CoreManagement", "Title", TxtTitle.Text, "CompanyID", CompanyID);
+            if (Data == null)
+            {
+                foreach (ListItem item in LstTopDesignation.Items)
+                {
+                    if (item.Selected)
+                    {
+                        Vt_Tbl_CoreManagement Obj = new Vt_Tbl_CoreManagement();
+                        Obj.Title = TxtTitle.Text;
+                        Obj.CompanyID = CompanyID;
+                        Obj.TopDesignationID = Convert.ToInt32(item.Value);
+                        db.Entry(Obj).State = System.Data.Entity.EntityState.Added;
+                    }
+                }
+                db.SaveChanges();
+                vt_Common.Clear(PnlDetails.Controls);
+                Fill_Gv();
+            }
+            else
+            {
+                MsgBox.Show(Page, MsgBox.danger, "Info", "Record already exist!");
+            }
+        }
+        else
+        {
+            MsgBox.Show(Page, MsgBox.danger, "Info", "Please Select Top Desigsnation");
+        }
+        return true;
+    }
+
+    private bool Save(string Title)
+    {
+        var Data = db.Vt_Tbl_CoreManagement.Where(x => x.Title == TxtTitle_Update.Text && x.CompanyID == CompanyID).ToList();
+        if (Data != null)
+        {
+            foreach (var item in Data)
+            {
+                db.Vt_Tbl_CoreManagement.Remove(item);
+            }
+            db.SaveChanges();
+
+            if (LstTopDesignation.Text != "")
+            {
+                var Data2 = ProcedureCall.sp_IsPresent("vt_tbl_CoreManagement", "Title", TxtTitle.Text, "CompanyID", CompanyID);
+                if (Data2 == null)
+                {
+                    foreach (ListItem item in LstTopDesignation.Items)
+                    {
+                        if (item.Selected)
+                        {
+                            Vt_Tbl_CoreManagement Obj = new Vt_Tbl_CoreManagement();
+                            Obj.Title = TxtTitle.Text;
+                            Obj.CompanyID = CompanyID;
+                            Obj.TopDesignationID = Convert.ToInt32(item.Value);
+                            db.Entry(Obj).State = System.Data.Entity.EntityState.Added;
+                        }
+                    }
+                    db.SaveChanges();
+                    Fill_Gv();
+
+                    vt_Common.Clear(PnlDetails.Controls);
+                    BtnSave.Text = "Save";
+                }
+                else
+                {
+                    MsgBox.Show(Page, MsgBox.danger, "Info", "Record already exist!");
+                }
+            }
+        }
+        return true;
+    }
+
+    private void Fill_Gv()
+    {
+        DataSet Ds = ProcedureCall.SpCall_Vt_Sp_GetCoreManagement(CompanyID);
+        if (Ds != null && Ds.Tables.Count > 0 && Ds.Tables[0].Rows.Count > 0)
+        {
+            GvDesignation.DataSource = Ds.Tables[0];
+        }
+        else
+        {
+            GvDesignation.DataSource = null;
+        }
+        GvDesignation.DataBind();
+    }
+
+    protected void GvDesignation_RowCommand(object sender, GridViewCommandEventArgs e)
+    {
+        int ID = vt_Common.CheckInt(e.CommandArgument);
+        switch (e.CommandName)
+        {
+            case "DeleteCompany":
+
+                Vt_Tbl_CoreManagement b = db.Vt_Tbl_CoreManagement.FirstOrDefault(x => x.ID == ID);
+                db.Vt_Tbl_CoreManagement.Remove(b);
+                db.SaveChanges();
+                Fill_Gv();
+                UpView.Update();
+                MsgBox.Show(Page, MsgBox.success, "Info", "Successfully Deleted");
+                break;
+
+            case "EditRecord":
+
+                FillDetails(ID);
+                break;
+        }
+    }
+
+    private void FillDetails(int ID)
+    {
+        var Record = db.Vt_Tbl_CoreManagement.Where(x => x.ID == ID).Single();
+        var Data = db.Vt_Tbl_CoreManagement.Where(x => x.Title == Record.Title && x.CompanyID == CompanyID).ToList();
+        if (Data != null)
+        {
+            foreach (var item in Data)
+            {
+                LstTopDesignation.Items.FindByValue(item.TopDesignationID.ToString()).Selected = true;
+            }
+            TxtTitle.Text = Record.Title;
+            TxtTitle_Update.Text = Record.Title;
+            LstTopDesignation.DataBind();
+        }
+        BtnSave.Text = "Update";
+        ViewState["PageID"] = ID;
+        UpView.Update();
+    }
+}

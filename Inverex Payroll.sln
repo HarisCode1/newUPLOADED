@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "HRMS", ".", "{60D2052F-C822-4375-AB10-7B49B2B82C34}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""
+		SccAuxPath = ""
+		SccLocalPath = ""
+		SccProvider = ""
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/HRMS"
+		Debug.AspNetCompiler.PhysicalPath = "..\HRMS\"
+		Debug.AspNetCompiler.TargetPath = "..\HRMS\"
+		Debug.AspNetCompiler.Updateable = "false"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "true"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/HRMS"
+		Release.AspNetCompiler.PhysicalPath = "..\HRMS\"
+		Release.AspNetCompiler.TargetPath = "..\HRMS\"
+		Release.AspNetCompiler.Updateable = "false"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "true"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "63417"
+		SlnRelativePath = "..\HRMS\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Release = Debug|Release
+		Release|Any CPU = Release|Any CPU
+		Release|Release = Release|Release
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60D2052F-C822-4375-AB10-7B49B2B82C34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D2052F-C822-4375-AB10-7B49B2B82C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60D2052F-C822-4375-AB10-7B49B2B82C34}.Debug|Release.ActiveCfg = Debug|Any CPU
+		{60D2052F-C822-4375-AB10-7B49B2B82C34}.Debug|Release.Build.0 = Debug|Any CPU
+		{60D2052F-C822-4375-AB10-7B49B2B82C34}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{60D2052F-C822-4375-AB10-7B49B2B82C34}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{60D2052F-C822-4375-AB10-7B49B2B82C34}.Release|Release.ActiveCfg = Debug|Any CPU
+		{60D2052F-C822-4375-AB10-7B49B2B82C34}.Release|Release.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {598A1430-D3C6-44F9-BBB5-41D58C5DAC96}
+	EndGlobalSection
+EndGlobal

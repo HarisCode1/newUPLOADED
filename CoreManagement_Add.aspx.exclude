@@ -1,0 +1,120 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/NewMain.master" AutoEventWireup="true" CodeFile="CoreManagement_Add.aspx.cs" Inherits="CoreManagement_Add" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <style>
+        button.multiselect.dropdown-toggle.btn.btn-default {
+            width: 100%;
+            text-align: left;
+            padding-left: 0px;
+            border: 1px solid #c2c1bf;
+            padding: 6px;
+        }
+
+        .btn-group {
+            width: 100%;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <section class="content-header">
+        <h1>Core Management</h1>
+        <ol class="breadcrumb">
+            <li><a href="Default.aspx"><i class="fa fa-dashboard"></i>Dashboard</a></li>
+            <li><a href="administration.aspx"><i class="fa fa-dashboard"></i>Adminintration</a></li>
+            <li class="active">Core Management Add</li>
+        </ol>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-info custom_input">
+                    <div class="box-header with-border">
+                        <i class="fa fa-table custom_header_icon admin_icon"></i>
+                        <h3 class="box-title">Core Management - Add</h3>
+                    </div>
+                    <div class="box-body">
+                        <asp:UpdatePanel ID="UpView" runat="server" UpdateMode="Conditional">
+                            <ContentTemplate>
+                                <asp:Panel ID="PnlDetails" runat="server">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            Title
+                                <asp:TextBox ID="TxtTitle" runat="server" CssClass="form-control"></asp:TextBox>
+                                <asp:TextBox ID="TxtTitle_Update" runat="server" CssClass="form-control" Visible="false"></asp:TextBox>
+                                        </div>
+                                        <div class="col-md-5">
+                                            Top Desigsnation
+                                <br />
+                                            <asp:ListBox ID="LstTopDesignation" runat="server" CssClass="form-control cstm-formcontrol" SelectionMode="Multiple"></asp:ListBox>
+                                        </div>
+                                        <div class="col-md-1 pt-20">
+                                            <span class="pull-right">
+                                                <asp:Button ID="BtnSave" runat="server" CssClass="btn btn-primary " Text="Save" OnClick="BtnSave_Click" />
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                    </div>
+
+                                    <div class="row">
+                                    </div>
+                                    <br />
+
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <asp:GridView ID="GvDesignation" runat="server" CssClass="table table-bordered table-hover" EmptyDataText="No Record Found" AutoGenerateColumns="false"
+                                                OnRowCommand="GvDesignation_RowCommand">
+                                                <Columns>
+                                                    <asp:BoundField DataField="Title" HeaderText="Title" />
+                                                    <asp:BoundField DataField="Designation" HeaderText="Reports" />
+                                                    <asp:TemplateField HeaderText="Action">
+                                                        <HeaderStyle Width="5%" />
+                                                        <ItemTemplate>
+                                                            <asp:LinkButton ID="lnkEdit" ToolTip="Edit" runat="server" CommandArgument='<%#Eval("Id")%>' CommandName="EditRecord">
+                                <i class="fa fa-pencil-square-o"></i>
+                                                            </asp:LinkButton>
+                                                            &nbsp;
+                                                        <asp:LinkButton ID="lnkDelete" runat="server" CssClass="confirm" CommandArgument='<%#Eval("Id")%>' CommandName="DeleteCompany" OnClientClick="return confirm('Are you Sure you want to Delete?')">
+                                                            <i class="fa fa-times-circle"></i>
+                                                        </asp:LinkButton>
+                                                        </ItemTemplate>
+                                                        <ItemStyle CssClass="action-icon" />
+                                                    </asp:TemplateField>
+                                                </Columns>
+                                            </asp:GridView>
+                                        </div>
+                                    </div>
+                                </asp:Panel>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <link href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+    <script src="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/js/bootstrap-multiselect.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            debugger
+            binddata();
+        });
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(function () {
+            binddata();
+        });
+        Sys.WebForms.PageRequestManager.getInstance().add_initializeRequest(function () {
+            binddata();
+        });
+        function binddata() {
+            $('[id*=LstDepartment]').multiselect({
+                includeSelectAllOption: true
+            });
+            $('[id*=LstTopDesignation]').multiselect({
+                includeSelectAllOption: true
+            });
+        }
+    </script>
+</asp:Content>

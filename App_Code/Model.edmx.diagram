@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0e2bb897afb643b2beb823f0871aa110" Name="Diagram1" ZoomLevel="66">
+        <AssociationConnector Association="vt_EMSModel.FK_vt_tbl_Bonus_vt_tbl_TypeofEmployee" />
+        <EntityTypeShape EntityType="vt_EMSModel.EmployeeCharacter" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.EmployeeFineCharge" Width="1.5" PointX="7.75" PointY="4.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.tbl_TempAttendance" Width="1.5" PointX="7.75" PointY="7.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.tbl_TypeOfEmployee" Width="1.5" PointX="9.75" PointY="0.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.TBLLINKVERIFICATION" Width="1.5" PointX="9.75" PointY="4.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.TBLSYSALLOWEDIP" Width="1.5" PointX="9.75" PointY="8.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.TBLUSERAUTHENTICATION" Width="1.5" PointX="11.75" PointY="0.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.TestTbl" Width="1.5" PointX="2.75" PointY="11.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_AssetAssignParent" Width="1.5" PointX="11.75" PointY="5.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_AssetMapping" Width="1.5" PointX="11.75" PointY="8.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Assets" Width="1.5" PointX="10.75" PointY="11.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_AttendaceDay" Width="1.5" PointX="12.75" PointY="11.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Attendance" Width="1.5" PointX="13.75" PointY="0.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Bank" Width="1.5" PointX="13.75" PointY="7.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Bonus" Width="1.5" PointX="0.75" PointY="14.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_BonusRecord" Width="1.5" PointX="2.75" PointY="14.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Branch" Width="1.5" PointX="14.75" PointY="10.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_BranchWiseAttendance" Width="1.5" PointX="12.75" PointY="14.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Category" Width="1.5" PointX="14.75" PointY="14.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_COFFApplication" Width="1.5" PointX="15.75" PointY="0.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_COFFApplicationDate" Width="1.5" PointX="15.75" PointY="4.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Company" Width="1.5" PointX="0.75" PointY="2.375" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_CompanyLogo" Width="1.5" PointX="15.75" PointY="7.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_CompanyMonthlySalary" Width="1.5" PointX="16.75" PointY="10.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_CompanyStaffPF" Width="1.5" PointX="16.75" PointY="15.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.Vt_Tbl_CoreManagement" Width="1.5" PointX="17.75" PointY="0.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Department" Width="1.5" PointX="2.75" PointY="17.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Device" Width="1.5" PointX="10.75" PointY="17.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_DeviceUser" Width="1.5" PointX="12.75" PointY="17.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EligibilityYears" Width="1.5" PointX="17.75" PointY="7.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EmailAuthentication" Width="1.5" PointX="18.75" PointY="10.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EmailSettings" Width="1.5" PointX="18.75" PointY="13.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EmpAttendance" Width="1.5" PointX="18.75" PointY="16.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Employee" Width="1.5" PointX="5.75" PointY="2.25" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Employee_Change_DesignationLog" Width="1.5" PointX="19.75" PointY="0.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.Vt_Tbl_Employee_PromotionLog" Width="1.5" PointX="19.75" PointY="5.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Employee_PromotionNewLog" Width="1.5" PointX="0.75" PointY="20.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Employee_TransferLog" Width="1.5" PointX="2.75" PointY="20.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Employee_TransferLogRecord" Width="1.5" PointX="20.75" PointY="10.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EmployeeAdvSalary" Width="1.5" PointX="20.75" PointY="15.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EmployeeAssets" Width="1.5" PointX="18.75" PointY="20.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EmployeeCOFFBalance" Width="1.5" PointX="20.75" PointY="19.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EmployeeCOFFDetails" Width="1.5" PointX="21.75" PointY="0.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EmployeeGrossSalary" Width="1.5" PointX="8" PointY="16.375" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EmployeeLeaveDetails" Width="1.5" PointX="21.75" PointY="4.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EmployeePhoto" Width="1.5" PointX="7.75" PointY="21.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EmployeeSalaryRate" Width="1.5" PointX="9.75" PointY="21.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EndOfServices" Width="1.5" PointX="11.75" PointY="21.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_ESICDeActiveEmployee" Width="1.5" PointX="13.75" PointY="21.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_ESICMonthlyReturns" Width="1.5" PointX="15.75" PointY="21.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_ESICSettings" Width="1.5" PointX="22.75" PointY="8.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_ExcelTest" Width="1.5" PointX="22.75" PointY="11.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_GatePassEntry" Width="1.5" PointX="22.75" PointY="14.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Gratuity" Width="1.5" PointX="22.75" PointY="18.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_HeadDepartment" Width="1.5" PointX="20.75" PointY="22.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Holiday" Width="1.5" PointX="22.75" PointY="22.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_HolidayDates" Width="1.5" PointX="23.75" PointY="0.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.Vt_Tbl_HolidaySchedule" Width="1.5" PointX="23.75" PointY="3.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.Vt_Tbl_HolidaysDates" Width="1.5" PointX="24.75" PointY="7.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_IsnotLoanDecution" Width="1.5" PointX="7.75" PointY="24.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Leave" Width="1.5" PointX="24.75" PointY="10.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_LeaveApplication" Width="1.5" PointX="24.75" PointY="13.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_LeaveApplicationDates" Width="1.5" PointX="13.75" PointY="24.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_LeaveRecords" Width="1.5" PointX="15.75" PointY="24.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_LeaveYear" Width="1.5" PointX="24.75" PointY="19.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Licence" Width="1.5" PointX="24.75" PointY="22.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Loan" Width="1.5" PointX="25.75" PointY="0.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_LoanEntry" Width="1.5" PointX="2.75" PointY="25.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_LoanEntryLog" Width="1.5" PointX="9.75" PointY="25.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_LoanMonthAmount" Width="1.5" PointX="25.75" PointY="3.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Logs" Width="1.5" PointX="17.75" PointY="25.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_ManualAttendance" Width="1.5" PointX="19.75" PointY="25.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Menu" Width="1.5" PointX="21.75" PointY="25.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Module" Width="1.5" PointX="23.75" PointY="25.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_ModulePermission" Width="1.5" PointX="25.75" PointY="25.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_NACDeviceConfig" Width="1.5" PointX="26.75" PointY="7.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Page" Width="1.5" PointX="26.75" PointY="10.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Page_Role_Mapping" Width="1.5" PointX="26.75" PointY="14.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_PageDetails" Width="1.5" PointX="26.75" PointY="18.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Payroll" Width="1.5" PointX="27.75" PointY="0.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_PayrollLoanAmount" Width="1.5" PointX="26.75" PointY="21.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_PayrollSalaryHeadAmout" Width="1.5" PointX="27.75" PointY="25.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_PayrollSettings" Width="1.5" PointX="28.75" PointY="7.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Permission" Width="1.5" PointX="28.75" PointY="11.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_PFMonthlyReturn" Width="1.5" PointX="11.75" PointY="28.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_PFRules" Width="1.5" PointX="13.75" PointY="28.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_PFSettings" Width="1.5" PointX="28.75" PointY="15.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_PreviousJobDetails" Width="1.5" PointX="28.75" PointY="19.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_ProvidentFund" Width="1.5" PointX="29.75" PointY="0.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_PTSettings" Width="1.5" PointX="29.75" PointY="3.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_QualificationDetails" Width="1.5" PointX="8" PointY="11.5" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Resignations" Width="1.5" PointX="15.75" PointY="29.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Role" Width="1.5" PointX="0.75" PointY="9.25" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_SalaryHead" Width="1.5" PointX="17.75" PointY="29.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_salaryRecords" Width="1.5" PointX="19.75" PointY="29.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Settings" Width="1.5" PointX="21.75" PointY="29.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_SheetRecord" Width="1.5" PointX="29.75" PointY="23.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Shift" Width="1.5" PointX="29.75" PointY="26.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_ShiftAllotment" Width="1.5" PointX="0.75" PointY="30.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_SitePages" Width="1.5" PointX="2.75" PointY="30.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_SMS_Log" Width="1.5" PointX="4.75" PointY="30.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_StaffBonus" Width="1.5" PointX="6.75" PointY="30.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Tax" Width="1.5" PointX="30.75" PointY="7.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Tax_Rate_Role" Width="1.5" PointX="8.75" PointY="30.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_TaxAdjustment" Width="1.5" PointX="30.75" PointY="11.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_TaxMaster" Width="1.5" PointX="30.75" PointY="15.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_TempAtt" Width="1.5" PointX="30.75" PointY="19.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_terminatedemployees" Width="1.5" PointX="23.75" PointY="30.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_TopDesignations" Width="1.5" PointX="25.75" PointY="30.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_TypeofEmployee" Width="1.5" PointX="31.75" PointY="0.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_TypeofSalary" Width="1.5" PointX="31.75" PointY="3.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_User" Width="1.5" PointX="3" PointY="2.375" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_UserRolePermission" Width="1.5" PointX="31.75" PointY="23.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_UserType" Width="1.5" PointX="31.75" PointY="28.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.PerfCounter" Width="1.5" PointX="31.75" PointY="31.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.Tally" Width="1.5" PointX="32.75" PointY="6.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_WorkingCalendar" Width="1.5" PointX="3" PointY="8.75" />
+        <AssociationConnector Association="vt_EMSModel.FK_vt_tbl_User_vt_tbl_Company" />
+        <AssociationConnector Association="vt_EMSModel.FK_vt_tbl_WorkingCalendar_vt_tbl_Company" />
+        <AssociationConnector Association="vt_EMSModel.FK_vt_tbl_EmployeeGrossSalary_vt_tbl_Employee" />
+        <AssociationConnector Association="vt_EMSModel.FK_vt_tbl_QualificationDetails_vt_tbl_Employee" />
+        <AssociationConnector Association="vt_EMSModel.FK_vt_tbl_User_vt_tbl_Role" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_Designation" Width="1.5" PointX="11.375" PointY="32.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_CompanyWorkingDays" Width="1.5" PointX="33.375" PointY="8.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EmployeeDocuments" Width="1.5" PointX="33.375" PointY="11.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_empjobinfolog" Width="1.5" PointX="13.375" PointY="33.75" />
+        <EntityTypeShape EntityType="vt_EMSModel.vt_tbl_EmployeeLeave" Width="1.5" PointX="33.375" PointY="15.75" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

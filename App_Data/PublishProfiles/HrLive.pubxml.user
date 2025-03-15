@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <History>True|2025-01-16T20:29:12.2499112Z;</History>
+    <PrecompileBeforePublish>false</PrecompileBeforePublish>
+    <EnableUpdateable>true</EnableUpdateable>
+    <ExcludeApp_Data>false</ExcludeApp_Data>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,400 @@
+<div id="payslip">
+    <!--http://localhost:63417/Images/Inverex.jpg-->
+
+	<div id="title"><img src="http://invhrlive.viftechuat.com/images/inverex.jpg" height="70" width="280" class="forlogoemsClient" alt="img"  style="margin-left:284px;"/>
+		<span style="float:right; margin-left:-13px;">
+	Date : may 2019</span>
+</div>
+<h1 style="padding-left: 346px; font-size: 22px;">Payslip</h1>
+	<h2>Personal Detail</h2>
+	    <div id="scope">
+           <div class="content">         
+              <div class="left-panel">
+
+                <div class="details">
+                    <div class="entry">
+                        <div class="label"><b>EmployeeID</b></div>
+                       
+                         <div class="value" style="padding-right: 180px;"><b>{EmployeeID}</b></div>
+                    </div>
+                    <div class="entry">
+                        <div class="label"><b>Designation</b></div>
+                      
+                         <div class="value"  style="padding-right: 180px;">{EmployeeName}</div>
+                    </div>
+                    <div class="entry">
+                        <div class="label"><b>Department</b></div>
+                       
+                        <div class="value"  style="padding-right: 180px;">{DepartmentID}</div>
+
+                    </div>
+                   
+               
+
+                </div>
+                
+                <!--<div class="contributions">
+
+                    
+
+                </div>-->
+
+            </div>
+             <div class="content">         
+           <div class="center-panel"  style="padding-right: 100px;">
+
+                <div class="details">
+                    <div class="entry">
+                        <div class="label">Employee Name</div>
+                        <div class="value">{EmployeeName}</div>
+                      
+                    </div>
+                    <div class="entry">
+                        <div class="label"><b>Employee CNIC</b></div>
+                        <div class="value"><b> {EmployeeCNIC} </b></div>
+                      
+                         
+                    </div>
+                    <div class="entry">
+                        <div class="label"><b>Employee Contact No.</b></div>
+                        <div class="value"><b>{EmployeeAddress}</b></div>
+                       
+                       
+
+                    </div>
+                   
+               
+
+                </div>
+                
+                <!--<div class="contributions">
+
+                    
+
+                </div>-->
+
+            </div>
+
+
+            <div class="right-panel">
+
+                <div class="details">
+                    <div class="entry">
+                        
+                        <div class="value"><b> Paid Through </b></div>
+                        <div class="value"><b> {PaidThrough}</b></div>
+
+                    </div>
+                    <div class="entry">
+                        
+                        <div class="value"><b>Bank Name</b></div>
+                        <div class="value"><b>{BankName}</b></div>
+                    </div>
+                    <div class="entry">
+                        
+                        <div class="value"><b>Bank Acc No.</b></div>
+                        <div class="value"><b>{BankAccNo}</b></div>
+                    </div>
+                  
+                 
+                </div>
+
+	</div>
+            </div>
+
+            
+        </div>
+			 <h2 style="font-size: 15px;">Salary Detail:</h2>
+
+	<div class="content">
+		<div class="left-panel">
+			
+			<div class="details">
+				<div class="entry">
+					<div class="label"><b>Earnings</b></div>
+					<div class="value">Amount</div>
+				</div>
+				<div class="entry">
+					<div class="label"><b>Basic</b></div>
+					<div class="value">{Basic}</div>
+				</div>
+				<div class="entry">
+					<div class="label"><b>Medical Allowance</b></div>
+					<div class="value">{MedicalAllowance}</div>
+				</div>
+				<div class="entry">
+					<div class="label"><b>Food Allowance</b></div>
+                    <div class="value">{HouseRentAllowance}</div>
+				</div>
+				<div class="entry">
+					<div class="label"><b>Transport Allowance</b></div>
+					<div class="value">{TransportAllowance}</div>
+				</div>
+				<div class="entry">
+					<div class="label"><b>Fuel Allowance</b></div>
+					<div class="value">{FuelAllowance}</div>
+				</div>
+				<div class="entry">
+					<div class="label"><b>Overtime</b></div>
+					<div class="value">{Overtime}</div>
+				</div>
+				<div class="entry">
+					<div class="label"><b>Bonus</b></div>
+					<div class="value">{Bonus}</div>
+				</div>
+				
+			</div>
+			<div class="gross">
+				<div class="title">Gross Income</div>
+				<div class="entry">
+					<div class="label"></div>
+					<div class="value">{SubTotal}</div>
+				</div>
+			</div>
+			<div class="contributions">
+				
+				<div class="entry border">
+				<div class="title">Net pay</div>
+					<div class="label"></div>
+					<div class="value cstm" style="font-size: 17px;">{NetPay}</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="right-panel" >
+			
+			<div class="details">
+				<div class="entry">
+					<div class="label"> Deduction</div>
+					<div class="value"><b>Amount</b></div>
+				</div>
+				<div class="entry">
+					<div class="label"></div>Fine Charges</div>
+					<div class="value">{finecharges}</div>
+				</div>
+				<div class="entry">
+					<div class="label">Income Tax</div>
+                    <div class="value">{IncomeTax}</div>
+				</div>
+				<div class="entry">
+					<div class="label">Advance Salary</div>
+					<div class="value">{Advance Salary}</div>
+				</div>
+				<div class="entry">
+					<div class="label">Loan</div>
+					<div class="value">{Loan}</div>
+				</div>
+				<div class="entry">
+					<div class="label">EOBI</div>
+					<div class="value">{EOBI}</div>
+				</div>
+				<div class="entry">
+					<div class="label">Leave On Joining</div>
+					<div class="value">{Leave On Joining}</div>
+				</div>
+				
+			</div>
+			<div class="gross">
+           
+				<div class="title">Gross<b style="color: red; font-size: 15px;"> Deduction</b></div>
+				<div class="entry">
+					<div class="label"></div>
+					<!--<div class="value" style="padding-top: 10px;">{Sub Total2}</div>-->
+                    <div class="value" style="padding-top: 10px;">{SubTotal2}</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<style>
+body {
+
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+  
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400,600,700');
+
+* {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	color: #444;
+}
+
+#payslip {
+	width: calc( 8.5in - 60px );
+	height: calc( 7.3in - 70px );
+	background: #fff;
+	padding: 7px 15px;
+	position:relative;	
+}
+
+#title {
+	margin-bottom: 3px;
+	font-size: 38px;
+	font-weight: 600;
+}
+
+
+#scope {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 7px 0 4px 0;
+	display: left;
+	justify-content: space-around;
+}
+
+#scope > .scope-entry {
+	text-align: center;
+	display: left;
+}
+
+#scope > .scope-entry > .value {
+
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.content {
+	display: flex;
+	
+
+	/*height: 880px;*/
+}
+
+.content .left-panel {
+    
+    min-width: 370px;
+    padding: 20px 16px 0 0;
+    height: 30.5%;
+    background-color: white;
+}
+.content .right-panel {
+	min-width: 340px;
+	padding: 10px 0  0 16px;
+}
+
+#employee {
+	text-align: center;
+	margin-bottom: 20px;
+}
+#employee #name {
+	font-size: 15px;
+	font-weight: 700;
+}
+
+#employee #email {
+	font-size: 11px;
+	font-weight: 300;
+}
+
+.details, .contributions, .ytd, .gross {
+	margin-bottom: 20px;
+}
+
+.details .entry, .contributions .entry, .ytd .entry {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 6px;
+}
+
+.details .entry .value, .contributions .entry .value, .ytd .entry .value {
+	font-weight: 700;
+	max-width: 130px;
+	text-align: right;
+}
+
+.gross .entry .value {
+	font-weight: 700;
+	text-align: right;
+	font-size: 16px;
+}
+
+.contributions .title, .ytd .title, .gross .title {
+	font-size: 15px;
+	font-weight: 700;
+	
+	padding-bottom: 4px;
+	margin-bottom: 6px;
+}
+
+.content .right-panel .details {
+	width: 100%;
+}
+
+.content .right-panel .details .entry {
+	display: flex;
+	padding: 0 10px;
+	margin: 6px 0;
+	
+}
+
+.content .right-panel .details .label {
+	font-weight: 700;
+	
+	width: 120px;
+}
+
+.content .right-panel .details .detail {
+	font-weight: 600;
+	width: 130px;
+	
+}
+
+.content .right-panel .details .rate {
+	font-weight: 400;
+	width: 80px;
+	font-style: italic;
+	letter-spacing: 1px;
+	
+}
+
+.content .right-panel .details .amount {
+	text-align: right;
+	font-weight: 700;
+	width: 90px;
+}
+
+.content .right-panel .details .net_pay div, .content .right-panel .details .nti div {
+	font-weight: 600;
+	font-size: 12px;
+}
+
+.content .right-panel .details .net_pay, .content .right-panel .details .nti {
+	padding: 3px 0 2px 0;
+	margin-bottom: 10px;
+	background: rgba(0, 0, 0, 0.04);
+}
+.value.cstm{
+    position: absolute;
+    right: 30px;
+}
+.value.cstm:after {
+    content: "";
+    width: 377px;
+    height: 1px;
+    background-color: #444444;
+    position: absolute;
+    top: 28px;
+    right: 0;
+}
+.entry.border{
+   
+    width: 100%;
+}
+div.right-panel{
+	padding:24px; 
+}
+h2{
+	font-size: 15px;
+}
+
+</style>

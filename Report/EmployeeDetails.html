@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Employee Details - Payroll</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	  body{
+		  margin-top: 15px !important;
+		  margin-bottom: 15px !important;
+	  }
+  </style>
+</head>
+<body>
+
+    <div class="container" style="
+         ">
+        <div class="row">
+            <div class="col-md-3"><img src="{empimage}" class="img-rounded" width="200" height="auto"> </div>
+            <div class="col-md-9">
+                <h2><strong>{FirstName} {LastName}</strong> <small>{Designation}</small></h2>
+                <p style="font-size:medium;margin-bottom: 0;"><b>Report To</b>  {ReportTo}</p>
+                <p><b>LineManager</b>: {recordmanager}</p>
+
+                <hr style="margin :10px 0;">
+
+                <p style="margin-bottom:0;"><b>Offical Email</b>: {Email}</p>
+
+                <p style="margin-bottom:0;"><b>Type</b>: {Type}</p>
+                <p style="margin-bottom :0;"><b>Department</b>: {Department}</p>
+
+            </div>
+        </div>
+        <hr style="
+            margin 10px 0;
+            ">
+        <div class="row">
+            <h3 style="
+                margin-top 10px;
+                ">
+                Personal Information
+            </h3>
+            <div class="col-md-4">
+                <!--<p><strong>Relation With Employee:</strong> {FatherHusbandName}</p>-->
+                <p><strong>Gender :</strong> {Sex}</p>
+                <p><strong>Mobile :</strong> {HomePhone}</p>
+                <p><strong>Emergency Contact Number :</strong> {Phone}</p>
+                <p><strong>CNIC   :</strong> {CNIC}</p>
+            </div>
+            <div class="col-md-4">
+                <p><strong>{FatherHusbandName}:</strong> {RelationWithEmployee}</p>
+                <p><strong>Marital Status :</strong> {Status}</p>
+                <!--<p><strong>Mobile :</strong> {Mobile}</p>-->
+            </div>
+            <div class="col-md-4">
+                <p><strong>Date of Birth :</strong> {DOB}</p>
+                <p><strong>Job Status :</strong> {JobStatus}</p>
+                <!--<p><strong>Phone :</strong> {Phone}</p>-->
+            </div>
+            <div class="col-md-12">
+                <p><strong>Current Address :</strong> {CurrentAddress}</p>
+                <p style="margin-bottom:0;"><b>Personal Email</b>: {Email}</p>
+            </div>
+            <!--<div class='col-md-12'>
+            <p><strong>Permenant Address :</strong> {PermenantAddress}</p>
+        </div>-->
+        </div>
+        <hr style="
+            margin 10px 0;
+            ">
+        <div class="row">
+            <h3 style="
+                margin-top 10px;
+                ">
+                Academic Qualification
+            </h3>
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Institute Name</th>
+                            <th>Degree &amp; Majors</th>
+                            <th>Passing Year</th>
+                            <th>CGPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            {AcademicInformation}
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr style="
+            margin 10px 0;
+            ">
+        <div class="row">
+            <h3 style="
+                margin-top 10px;
+                ">
+                Certifications
+            </h3>
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Institute Name</th>
+                            <th>Degree &amp; Majors</th>
+                            <th>Passing Year</th>
+                            <th>CGPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            {CertificateInformation}
+                            <!--<td>{CertificationsInstituteName}</td>
+                        <td>{CertificationsQualification}</td>
+                        <td>{CertificationsYears}</td>
+                        <td>{CertificationsGPA}</td>-->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <h3 style="
+                margin-top 10px;
+                ">
+                Previous Job Information
+            </h3>
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Company Name</th>
+                            <th>Designation</th>
+                            <th>Joining Date</th>
+                            <th>End Date</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {PreviousJobInformation}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <h3>
+                Employee Transfer Information
+            </h3>
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td>EmployeeCode</td>
+                            <td>EmployeeName</td>
+                            <td>Department</td>
+                            <td>Designation</td>
+                            <td>LineManager</td>
+                            <!--<td>ReportTo</td>
+                            <td>Email</td>
+                            <td>CompanyName</td>-->
+                            <td>TransferDate</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {EmlpoyeeTransferRows}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <h3>
+                Employee Promotion
+            </h3>
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+
+                            <td>EmployeeID</td>
+                            <td>EmployeeName</td>
+                            <td>Department</td>
+                            <td>Designation</td>
+                            <td>Basic Salary</td>
+                            <td>Food Allowance </td>
+                            <td>Transport Allowance</td>
+                            <td>Medical Allowance</td>
+                            <td>Fuel Allowance</td>
+                            <td>Effective Date</td>
+                            <td>Tax</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {EmlpoyeePromotionRows}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <!--<div class="row">
+        <h3>Job Information</h3>
+        <div class="col-md-4">
+            <p><strong>Probation Period :</strong> {Probation}</p>
+            <p><strong>Status :</strong> {jobStatus}</p>
+        </div>-->
+        <!--<div class="col-md-4">
+        <p><strong>Confimation Date :</strong> {ConfimationDate}</p>
+    </div>-->
+        <!--<div class="col-md-4">
+            <p><strong>Joining Date :</strong> {JoiningDate} </p>
+        </div>
+    </div>-->
+
+        <div class="row">
+            <h3> Job Information </h3>
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td>Joining Date</td>
+                            <td>Employee Status</td>
+                            <td>Job Type</td>
+                            <td>Designation</td>
+                            <td>Department</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {EmlpoyeeJobLogRows}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+        <!--<hr>
+    <div class="row">
+        <h3>Payroll Information</h3>
+        <div class="col-md-4">
+            <p><strong>Basic Salary :</strong> {BasicSalary}</p>
+            <p><strong>Transport Allowance :</strong> {TransportAllowance}</p>-->
+        <!--<p><strong>Type of Providient Fund :</strong> {TypeOfPF}</p>-->
+        <!--</div>
+    <div class="col-md-4">
+        <p><strong>Food Allowance :</strong> {HouseRentAllowance}</p>-->
+        <!--p><strong>Fuel Allowance :</strong> {FuelAllowance}</p>
+    <p><strong>Providient Fund :</strong> {PF}</p>-->
+        <!--</div>
+    <div class="col-md-4">
+        <p><strong>Medical Allowance :</strong> {MedicalAllowance}</p>-->
+        <!--<p><strong>Special Allowance :</strong> {SpecialAllowance}</p>-->
+        <!--</div>
+    </div>
+
+    <hr>-->
+        <!--<div class="row">
+        <h3>Bank Account Information</h3>
+        <div class="col-md-3">
+            <p><strong>Payment Mode:</strong> {paymentmethod}</p>
+
+        </div>
+        <div class="col-md-3">
+            <p><strong>From Bank :</strong> {FromBank}</p>
+            <p><strong>To Branch :</strong> {ToBranch}</p>
+        </div>
+        <div class="col-md-3">
+            <p><strong>To Bank :</strong> {ToBank}</p>
+            <p><strong>From Branch :</strong> {FromBranch}</p>
+
+        </div>
+        <div class="col-md-3">
+
+            <p><strong>Account # :</strong> {AccountNo}</p>
+            <p><strong>Account Title # :</strong> {AccountTitles}</p>
+        </div>
+    </div>-->
+    </div>
+
+</body>
+</html>

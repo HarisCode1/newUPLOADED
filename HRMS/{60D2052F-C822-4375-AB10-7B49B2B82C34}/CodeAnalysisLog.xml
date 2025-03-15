@@ -1,0 +1,1454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files\microsoft visual studio\2022\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="17.0">
+ <Targets>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Code.dll">
+   <Modules>
+    <Module Name="app_code.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="AssetsAssign_BAL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'AssetsAssign_BAL' because it creates members of the following IDisposable types: 'DataTable'. If 'AssetsAssign_BAL' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="AssetsAssign_DLL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DeleteUser(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="AssetsAssign_DLL.cs" Line="114">'AssetsAssign_DLL.DeleteUser(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#getAssignAssets()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="AssetsAssign_DLL.cs" Line="84">'AssetsAssign_DLL.getAssignAssets()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#getgratuity()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="AssetsAssign_DLL.cs" Line="96">'AssetsAssign_DLL.getgratuity()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Sp_Insert(User_BAL)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="AssetsAssign_DLL.cs" Line="43">'AssetsAssign_DLL.Sp_Insert(User_BAL)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateById(User_BAL)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="AssetsAssign_DLL.cs" Line="71">'AssetsAssign_DLL.UpdateById(User_BAL)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Bonus_DAL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateSP(Bonus_BAL)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="Bonus_DAL.cs" Line="40">'Bonus_DAL.CreateSP(Bonus_BAL)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetBonusByID(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="Bonus_DAL.cs" Line="120">'Bonus_DAL.GetBonusByID(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateSP(Bonus_BAL)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="Bonus_DAL.cs" Line="66">'Bonus_DAL.UpdateSP(Bonus_BAL)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Company_DAL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetCompanyID(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="Company_DAL.cs" Line="28">'Company_DAL.GetCompanyID(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="CompanyStaffPf_DAl" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetPF_RulesByID(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="CompanyStaffPf_DAl.cs" Line="28">'CompanyStaffPf_DAl.GetPF_RulesByID(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="DataSetCrystalReport" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'DataSetCrystalReport'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="DataSetCrystalReport+vt_tbl_EligibilityYearsDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'DataSetCrystalReport.vt_tbl_EligibilityYearsDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Ds_SP_GetEmpSalaries" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'Ds_SP_GetEmpSalaries'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="Ds_SP_GetEmpSalaries+VT_SP_GetEmpSalaries6Feb2019DataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'Ds_SP_GetEmpSalaries.VT_SP_GetEmpSalaries6Feb2019DataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="EMS_Session" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'EMS_Session' because it creates members of the following IDisposable types: 'DataTable'. If 'EMS_Session' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="ErrHandler" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#WriteError(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\Common" File="ErrHandler.cs" Line="45">Object 'w' can be disposed more than once in method 'ErrHandler.WriteError(string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 45</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Graduity_DAl" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#sp_GetGraduityByID(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="Graduity_DAl.cs" Line="28">'Graduity_DAl.sp_GetGraduityByID(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Login_DAL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CheckPSIDAndPassword(System.String,System.String)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="Login_DAL.cs" Line="32">'Login_DAL.CheckPSIDAndPassword(string, string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CheckPSIDAndPassword(System.String,System.String,System.Data.SqlClient.SqlTransaction)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="Login_DAL.cs" Line="50">'Login_DAL.CheckPSIDAndPassword(string, string, SqlTransaction)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CheckPSIDAndPasswordUser(System.String,System.String,System.Data.SqlClient.SqlTransaction)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="Login_DAL.cs" Line="67">'Login_DAL.CheckPSIDAndPasswordUser(string, string, SqlTransaction)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PayRoll_Session" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'PayRoll_Session' because it creates members of the following IDisposable types: 'DataTable'. If 'PayRoll_Session' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="PF_Rules_DAL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetPF_RulesByID(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="PF_Rules_DAL.cs" Line="28">'PF_Rules_DAL.GetPF_RulesByID(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Sp_insertUpdatePF_Rules(PF_Rules_BAL)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="PF_Rules_DAL.cs" Line="67">'PF_Rules_DAL.Sp_insertUpdatePF_Rules(PF_Rules_BAL)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Role_DAL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateModifyRoles(Role_BAl)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="Role_DAL.cs" Line="34">'Role_DAL.CreateModifyRoles(Role_BAl)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetRoleInfo(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="Role_DAL.cs" Line="102">'Role_DAL.GetRoleInfo(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetRoles()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="Role_DAL.cs" Line="67">'Role_DAL.GetRoles()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ModifiedByID(Role_BAl)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="Role_DAL.cs" Line="55">'Role_DAL.ModifiedByID(Role_BAl)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RolePermission_DLL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#InsertUpdateModulePermissionByRoleID(RolePermission_BAL,System.Data.SqlClient.SqlTransaction)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="RolePermission_DLL.cs" Line="37">'RolePermission_DLL.InsertUpdateModulePermissionByRoleID(RolePermission_BAL, SqlTransaction)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InsertUpdatePagePermission(RolePermission_BAL,System.Data.SqlClient.SqlTransaction)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="RolePermission_DLL.cs" Line="62">'RolePermission_DLL.InsertUpdatePagePermission(RolePermission_BAL, SqlTransaction)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SalaryGenerationDemoLink" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'SalaryGenerationDemoLink'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="SalaryGenerationDemoLink+VT_SP_GetEmpSalariesDemoLinkDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'SalaryGenerationDemoLink.VT_SP_GetEmpSalariesDemoLinkDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="SqlHelper" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateCommand(System.Data.SqlClient.SqlConnection,System.String,System.String[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\Common" File="SQLHelper.cs" Line="1932">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'SqlHelper.CreateCommand(SqlConnection, string, params string[])' could contain the following variables 'spName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExecuteNonQuery(System.Data.SqlClient.SqlConnection,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\Common" File="SQLHelper.cs" Line="329">'SqlHelper.ExecuteNonQuery(SqlConnection, CommandType, string, params SqlParameter[])' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#PrepareCommand(System.Data.SqlClient.SqlCommand,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction,System.Data.CommandType,System.String,System.Data.SqlClient.SqlParameter[],System.Boolean&amp;)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\Common" File="SQLHelper.cs" Line="175">The query string passed to 'SqlCommand.CommandText.set(string)' in 'SqlHelper.PrepareCommand(SqlCommand, SqlConnection, SqlTransaction, CommandType, string, SqlParameter[], out bool)' could contain the following variables 'commandText'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SqlHelperParameterCache" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DiscoverSpParameterSet(System.Data.SqlClient.SqlConnection,System.String,System.Boolean)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\Common" File="SQLHelper.cs" Line="2451">The query string passed to 'SqlCommand.SqlCommand(string, SqlConnection)' in 'SqlHelperParameterCache.DiscoverSpParameterSet(SqlConnection, string, bool)' could contain the following variables 'spName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StaffBonus_DAL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreateSP(StaffBonus_BAL)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="StaffBonus_DAL.cs" Line="36">'StaffBonus_DAL.CreateSP(StaffBonus_BAL)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetBonusByID(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="StaffBonus_DAL.cs" Line="102">'StaffBonus_DAL.GetBonusByID(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateSP(StaffBonus_BAL)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="StaffBonus_DAL.cs" Line="58">'StaffBonus_DAL.UpdateSP(StaffBonus_BAL)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TypeOfEmployee_DAl" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetEmployeeListById(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="TypeOfEmployee_DAl.cs" Line="31">'TypeOfEmployee_DAl.GetEmployeeListById(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#insertUpdateTypeOfEmp(TypeOfEmployee_BAL)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="TypeOfEmployee_DAl.cs" Line="62">'TypeOfEmployee_DAl.insertUpdateTypeOfEmp(TypeOfEmployee_BAL)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="User_BAL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="DependsOnFix">
+           <Issue Name="DependsOnFix" Certainty="95" Level="CriticalError">Implement IDisposable on 'User_BAL' because it creates members of the following IDisposable types: 'DataTable'. If 'User_BAL' has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="User_DLL" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#DeleteUser(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="User_DLL.cs" Line="141">'User_DLL.DeleteUser(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetTerminatedEmployeeCompanyID(System.Int32)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="User_DLL.cs" Line="158">'User_DLL.GetTerminatedEmployeeCompanyID(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetUserListByCompanyID()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="User_DLL.cs" Line="123">'User_DLL.GetUserListByCompanyID()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetDefaultPassword(User_BAL)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="User_DLL.cs" Line="101">'User_DLL.SetDefaultPassword(User_BAL)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Sp_Insert(User_BAL)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="User_DLL.cs" Line="43">'User_DLL.Sp_Insert(User_BAL)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#UpdateById(User_BAL)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\DAL" File="User_DLL.cs" Line="72">'User_DLL.UpdateById(User_BAL)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="vt_EMS_PhaseIIDataSet" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'vt_EMS_PhaseIIDataSet'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="vt_EMS_PhaseIIDataSet+VT_SP_GetEmpSalariesDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'vt_EMS_PhaseIIDataSet.VT_SP_GetEmpSalariesDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="vt_EMSDataSet" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'vt_EMSDataSet'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="vt_EMSDataSet+VT_SP_GetEmpSalariesDataTable" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Messages>
+          <Message TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+           <Issue Certainty="60" Level="Error">Add an implementation of GetObjectData to type 'vt_EMSDataSet.VT_SP_GetEmpSalariesDataTable'.</Issue>
+          </Message>
+         </Messages>
+        </Type>
+        <Type Name="vt_tbl_Company" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code" File="Model.cs" Line="246">'vt_tbl_Company.vt_tbl_Company()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;vt_tbl_Company..ctor()&#xD;&#xA;vt_tbl_Company.set_vt_tbl_Employee(ICollection&lt;vt_tbl_Employee&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code" File="Model.cs" Line="246">'vt_tbl_Company.vt_tbl_Company()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;vt_tbl_Company..ctor()&#xD;&#xA;vt_tbl_Company.set_vt_tbl_User(ICollection&lt;vt_tbl_User&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code" File="Model.cs" Line="246">'vt_tbl_Company.vt_tbl_Company()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;vt_tbl_Company..ctor()&#xD;&#xA;vt_tbl_Company.set_vt_tbl_WorkingCalendar(ICollection&lt;vt_tbl_WorkingCalendar&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="vt_tbl_Department" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code" File="Model.cs" Line="332">'vt_tbl_Department.vt_tbl_Department()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;vt_tbl_Department..ctor()&#xD;&#xA;vt_tbl_Department.set_vt_tbl_Employee(ICollection&lt;vt_tbl_Employee&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="vt_tbl_Employee" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code" File="Model.cs" Line="425">'vt_tbl_Employee.vt_tbl_Employee()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;vt_tbl_Employee..ctor()&#xD;&#xA;vt_tbl_Employee.set_vt_tbl_EmployeeGrossSalary(ICollection&lt;vt_tbl_EmployeeGrossSalary&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code" File="Model.cs" Line="425">'vt_tbl_Employee.vt_tbl_Employee()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;vt_tbl_Employee..ctor()&#xD;&#xA;vt_tbl_Employee.set_vt_tbl_QualificationDetails(ICollection&lt;vt_tbl_QualificationDetails&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="vt_tbl_Role" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#.ctor()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code" File="Model.cs" Line="1325">'vt_tbl_Role.vt_tbl_Role()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;vt_tbl_Role..ctor()&#xD;&#xA;vt_tbl_Role.set_vt_tbl_Employee(ICollection&lt;vt_tbl_Employee&gt;):Void</Issue>
+             <Issue Certainty="95" Level="CriticalWarning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code" File="Model.cs" Line="1325">'vt_tbl_Role.vt_tbl_Role()' contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: &#xD;&#xA;&#xD;&#xA;vt_tbl_Role..ctor()&#xD;&#xA;vt_tbl_Role.set_vt_tbl_User(ICollection&lt;vt_tbl_User&gt;):Void</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+      <Namespace Name="Viftech">
+       <Types>
+        <Type Name="vt_Common" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Encrypt(System.String,System.Byte[])" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\Common" File="VT_Common.cs" Line="576">'vt_Common.Encrypt(string, byte[])' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteErrorFile(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS\App_Code\Common" File="VT_Common.cs" Line="419">Object 'writer' can be disposed more than once in method 'vt_Common.WriteErrorFile(string, string)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 419</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Web_0qurvuru.dll">
+   <Modules>
+    <Module Name="app_web_0qurvuru.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="AssetsAssign" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BindAssignedAssetDropDown()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="AssetsAssign.aspx.cs" Line="324">'AssetsAssign.BindAssignedAssetDropDown()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#BindDropDown()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="AssetsAssign.aspx.cs" Line="305">'AssetsAssign.BindDropDown()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClearForm()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="AssetsAssign.aspx.cs" Line="229">'AssetsAssign.ClearForm()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Gratuity" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClearForm()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Gratuity.aspx.cs" Line="338">'Gratuity.ClearForm()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Web_1b32tqgd.dll">
+   <Modules>
+    <Module Name="app_web_1b32tqgd.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="ExportExcel" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Load()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="AttendanceExcel.aspx.cs" Line="47">'ExportExcel.Load()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadExcel()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="AttendanceExcel.aspx.cs" Line="210">Object 'bcp' can be disposed more than once in method 'ExportExcel.ReadExcel()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 210</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RolePermission" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BindAllGrid()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="66">'RolePermission.BindAllGrid()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnSave_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="242">'RolePermission.btnSave_Click(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#CheckApply(System.Int32,System.String,System.Boolean)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="390">'RolePermission.CheckApply(int, string, bool)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#chkAllSelect_CheckedChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="276">'RolePermission.chkAllSelect_CheckedChanged(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#chkAllSelect_CheckedChanged1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="371">'RolePermission.chkAllSelect_CheckedChanged1(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ChkDelete_CheckedChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="351">'RolePermission.ChkDelete_CheckedChanged(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ChkInsert_CheckedChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="313">'RolePermission.ChkInsert_CheckedChanged(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ChkUpdate_CheckedChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="333">'RolePermission.ChkUpdate_CheckedChanged(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ChkView_CheckedChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="295">'RolePermission.ChkView_CheckedChanged(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ddlUserAndEmp_SelectedIndexChanged(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="739">'RolePermission.ddlUserAndEmp_SelectedIndexChanged(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetGridName(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="446">'RolePermission.GetGridName(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetModulPermission(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="112">'RolePermission.GetModulPermission(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetRolePagePermission(System.Int32)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="158">'RolePermission.GetRolePagePermission(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#InsertUpdateModulePermission(System.Int32,System.Int32,System.Data.SqlClient.SqlTransaction)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="542">'RolePermission.InsertUpdateModulePermission(int, int, SqlTransaction)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#SetRolePagePermissionOnGrid(System.Web.UI.WebControls.GridView,System.Data.DataRow)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RolePermission.aspx.cs" Line="191">'RolePermission.SetRolePagePermissionOnGrid(GridView, DataRow)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="TypeOfEmployee" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#lbtnDelete_Command(System.Object,System.Web.UI.WebControls.CommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="TypeOfEmployee.aspx.cs" Line="117">'TypeOfEmployee.lbtnDelete_Command(object, CommandEventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Web_3qb2vcvs.dll">
+   <Modules>
+    <Module Name="app_web_3qb2vcvs.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Attendance_Sheet" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#addTempAttendance()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Attendance_Sheet.aspx.cs" Line="117">Object 'bcp' can be disposed more than once in method 'Attendance_Sheet.addTempAttendance()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 117</Issue>
+             <Issue Certainty="75" Level="Warning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Attendance_Sheet.aspx.cs" Line="168">Object 'bcp' can be disposed more than once in method 'Attendance_Sheet.addTempAttendance()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 168</Issue>
+            </Message>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Attendance_Sheet.aspx.cs" Line="180">'Attendance_Sheet.addTempAttendance()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Load()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Attendance_Sheet.aspx.cs" Line="458">'Attendance_Sheet.Load()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadBySearch(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Attendance_Sheet.aspx.cs" Line="520">'Attendance_Sheet.LoadBySearch(string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadExcel()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Attendance_Sheet.aspx.cs" Line="265">Object 'bcp' can be disposed more than once in method 'Attendance_Sheet.ReadExcel()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 265</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Designation" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Load()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Designation.aspx.cs" Line="646">'Designation.Load()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="HolidayNew" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#OneDayHolidayForALl(System.String,System.String,System.String,System.String,System.String,System.String,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="HolidayNew.aspx.cs" Line="550">Object 'connection' can be disposed more than once in method 'HolidayNew.OneDayHolidayForALl(string, string, string, string, string, string, int)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 550</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Web_4hhnd0d1.dll">
+   <Modules>
+    <Module Name="app_web_4hhnd0d1.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="login" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#HideLoading()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="login.aspx.cs" Line="48">'login.HideLoading()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="main" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BindMenu()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="main.master.cs" Line="353">'main.BindMenu()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="NewMain" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BindMenu()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="NewMain.master.cs" Line="335">'NewMain.BindMenu()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Web_5aop531u.dll">
+   <Modules>
+    <Module Name="app_web_5aop531u.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="BankWiseSalaryRecord" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Load(System.Int32,System.String,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="BankWiseSalaryRecord.aspx.cs" Line="113">'BankWiseSalaryRecord.Load(int, string, int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Employee_Character" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClearForm()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Employee_Character.aspx.cs" Line="281">'Employee_Character.ClearForm()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lnkDelete_Command(System.Object,System.Web.UI.WebControls.CommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Employee_Character.aspx.cs" Line="193">'Employee_Character.lnkDelete_Command(object, CommandEventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Employes_Transfer" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Load()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Employes_Transfer.aspx.cs" Line="90">'Employes_Transfer.Load()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Web_dxe5dfx2.dll">
+   <Modules>
+    <Module Name="app_web_dxe5dfx2.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="DeactiveEmployees" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Load()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="DeactiveEmployees.aspx.cs" Line="77">'DeactiveEmployees.Load()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Employee_Assets" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Load()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Employee_Assets.aspx.cs" Line="50">'Employee_Assets.Load()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Graduity" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#lbtnDelete_Command(System.Object,System.Web.UI.WebControls.CommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Graduity.aspx.cs" Line="89">'Graduity.lbtnDelete_Command(object, CommandEventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Role" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnAddNew_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Role.aspx.cs" Line="50">'Role.btnAddNew_Click(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnClose_Click1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Role.aspx.cs" Line="153">'Role.btnClose_Click1(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClearForm()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Role.aspx.cs" Line="102">'Role.ClearForm()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lbtnDelete_Command(System.Object,System.Web.UI.WebControls.CommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Role.aspx.cs" Line="141">'Role.lbtnDelete_Command(object, CommandEventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lbtnEdit_Command(System.Object,System.Web.UI.WebControls.CommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Role.aspx.cs" Line="123">'Role.lbtnEdit_Command(object, CommandEventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadGrid()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Role.aspx.cs" Line="37">'Role.LoadGrid()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="StaffBonus" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BinEmpType()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="StaffBonus.aspx.cs" Line="249">'StaffBonus.BinEmpType()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnAdd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="StaffBonus.aspx.cs" Line="48">'StaffBonus.btnAdd_Click(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnClose_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="StaffBonus.aspx.cs" Line="141">'StaffBonus.btnClose_Click(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnSave_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="StaffBonus.aspx.cs" Line="129">'StaffBonus.btnSave_Click(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClearForm()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="StaffBonus.aspx.cs" Line="155">'StaffBonus.ClearForm()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lbtnDelete_Command(System.Object,System.Web.UI.WebControls.CommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="StaffBonus.aspx.cs" Line="312">'StaffBonus.lbtnDelete_Command(object, CommandEventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lbtnEdit_Command(System.Object,System.Web.UI.WebControls.CommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="StaffBonus.aspx.cs" Line="202">'StaffBonus.lbtnEdit_Command(object, CommandEventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadGrid()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="StaffBonus.aspx.cs" Line="229">'StaffBonus.LoadGrid()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Web_fiv5kg3k.dll">
+   <Modules>
+    <Module Name="app_web_fiv5kg3k.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="CompanyStaffPF" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BindComp()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="CompanyStaffPF.aspx.cs" Line="44">'CompanyStaffPF.BindComp()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lbtnDelete_Command(System.Object,System.Web.UI.WebControls.CommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="CompanyStaffPF.aspx.cs" Line="202">'CompanyStaffPF.lbtnDelete_Command(object, CommandEventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Web_fw0zrc2a.dll">
+   <Modules>
+    <Module Name="app_web_fw0zrc2a.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Bonus" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BinEmpType()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Bonus.aspx.cs" Line="221">'Bonus.BinEmpType()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnAdd_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Bonus.aspx.cs" Line="46">'Bonus.btnAdd_Click(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnClose_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Bonus.aspx.cs" Line="111">'Bonus.btnClose_Click(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnSave_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Bonus.aspx.cs" Line="99">'Bonus.btnSave_Click(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClearForm()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Bonus.aspx.cs" Line="130">'Bonus.ClearForm()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lbtnDelete_Command(System.Object,System.Web.UI.WebControls.CommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Bonus.aspx.cs" Line="275">'Bonus.lbtnDelete_Command(object, CommandEventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lbtnEdit_Command(System.Object,System.Web.UI.WebControls.CommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Bonus.aspx.cs" Line="179">'Bonus.lbtnEdit_Command(object, CommandEventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadGrid()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Bonus.aspx.cs" Line="207">'Bonus.LoadGrid()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Web_oumke5mh.dll">
+   <Modules>
+    <Module Name="app_web_oumke5mh.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="EmployeeAssets" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClearForm()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="EmployeeAssets.aspx.cs" Line="96">'EmployeeAssets.ClearForm()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#lnkDelete_Command(System.Object,System.Web.UI.WebControls.CommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="EmployeeAssets.aspx.cs" Line="241">'EmployeeAssets.lnkDelete_Command(object, CommandEventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Web_s5iayjmd.dll">
+   <Modules>
+    <Module Name="app_web_s5iayjmd.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="LoanApproval" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClearForm()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="LoanApproval.aspx.cs" Line="279">'LoanApproval.ClearForm()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Tax" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClearForm()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Tax.aspx.cs" Line="260">'Tax.ClearForm()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Web_tqbzoimi.dll">
+   <Modules>
+    <Module Name="app_web_tqbzoimi.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="EmployeeFineCharges" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClearForm()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="EmployeeFineCharges.aspx.cs" Line="191">'EmployeeFineCharges.ClearForm()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Web_uzhtofa1.dll">
+   <Modules>
+    <Module Name="app_web_uzhtofa1.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Userform" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#BindDropDown()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Userform.aspx.cs" Line="172">'Userform.BindDropDown()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ClearForm()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Userform.aspx.cs" Line="197">'Userform.ClearForm()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Web_vc0lhnd4.dll">
+   <Modules>
+    <Module Name="app_web_vc0lhnd4.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Employes" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ddlShift_SelectedIndexChanged1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Employes.aspx.cs" Line="934">'Employes.ddlShift_SelectedIndexChanged1(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Load()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Employes.aspx.cs" Line="170">'Employes.Load()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#LoadData()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Employes.aspx.cs" Line="220">'Employes.LoadData()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="RdTesting" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Test()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="RdTesting.aspx.cs" Line="62">'RdTesting.Test()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="SalaryGeneration" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Load(System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="SalaryGeneration.aspx.cs" Line="243">'SalaryGeneration.Load(int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\FC\AppData\Local\Temp\tmpAB3F.tmp.cadir\bin\App_Web_wabagv5w.dll">
+   <Modules>
+    <Module Name="app_web_wabagv5w.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="EmailSetting" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Load(System.String,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="ReportGenerator.aspx.cs" Line="183">'EmailSetting.Load(string, int)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Employee" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btndelete_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Employee.aspx.cs" Line="977">'Employee.btndelete_Click(object, EventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Load()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Employee.aspx.cs" Line="111">'Employee.Load()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadExcel()" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Employee.aspx.cs" Line="340">Object 'bcp' can be disposed more than once in method 'Employee.ReadExcel()'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 340</Issue>
+            </Message>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="Employee.aspx.cs" Line="253">'Employee.ReadExcel()' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PF_Rules" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#lbtnDelete_Command(System.Object,System.Web.UI.WebControls.CommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2024-12-04 11:07:38Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\pooja\projects\HRMS Project\HRMS\HRMS" File="PF_Rules.aspx.cs" Line="125">'PF_Rules.lbtnDelete_Command(object, CommandEventArgs)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 550</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotCallOverridableMethodsInConstructors" Category="Microsoft.Usage" CheckId="CA2214">
+   <Name>Do not call overridable methods in constructors</Name>
+   <Description>Virtual methods defined on the class should not be called from constructors. If a derived class has overridden the method, the derived class version will be called (before the derived class constructor is called).</Description>
+   <Resolution Name="Default">{0} contains a call chain that results in a call to a virtual method defined by the class. Review the following call stack for unintended consequences: {1}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182331.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="usagerules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="ImplementISerializableCorrectly" Category="Microsoft.Usage" CheckId="CA2240">
+   <Name>Implement ISerializable correctly</Name>
+   <Description>If a type is assignable to ISerializable, it should implement GetObjectData. For unsealed types, the GetObjectData method should be callable and overridable by derived types.</Description>
+   <Resolution Name="Default">Add an implementation of GetObjectData to type {0}.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182342.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="60">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+   <Name>Rethrow to preserve stack details</Name>
+   <Description>Use the IL rethrow instruction to preserve original stack details when re-raising a caught exception.</Description>
+   <Resolution Name="Default">{0} rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182363.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="17.0.0.0" />
+  </Rule>
+  <Rule TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001">
+   <Name>Types that own disposable fields should be disposable</Name>
+   <Description>Types that declare disposable members should also implement IDisposable. If the type does not own any unmanaged resources, do not implement a finalizer on it.</Description>
+   <Resolution Name="DependsOnFix">Implement IDisposable on {0} because it creates members of the following IDisposable types: {1}. If {0} has previously shipped, adding new members that implement IDisposable to this type is considered a breaking change to existing consumers.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182172.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalError</MessageLevel>
+   <File Name="designrules.dll" Version="17.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>

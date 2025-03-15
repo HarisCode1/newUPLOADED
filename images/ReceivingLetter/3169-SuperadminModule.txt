@@ -1,0 +1,9 @@
+1) Core Management 
+
+
+
+2)Loan Module
+issue redirection to default on click loan input
+issue redirection to default on click Advanced Salary
+
+	
